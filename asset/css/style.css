@@ -1,0 +1,503 @@
+.main {
+    width: fit-content;
+}
+.header {
+   height: 48px;
+   background-color: rgba(0, 0, 0, 0.8);    
+   position: fixed;
+   z-index: 1;
+   width: 100%;
+   top: 0;
+   right: 0;
+   left: 0;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px #6f6f6f;
+}
+
+.navbar__list {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar__list-item {
+    display: flex;
+    align-items: center;
+    min-width: 88px;
+    position: relative;
+}
+
+.navbar__list-item:hover {
+    background-color: #cccccc;
+}
+
+.navbar__list-item-more {
+    cursor: pointer;
+}
+
+.navbar__list-item-more:hover .navbar__list-item-icon-down {
+    color: black;
+}
+
+.navbar__list-item-more:hover .navbar__list-link {
+    color: var(--text-color);
+}
+
+.navbar__list-link {
+    display: block;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 1;
+}
+
+.navbar__list-item-icon-down {
+    color: var(--white-color);
+    margin: 0 24px 0 4px;
+}
+
+.navbar__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 62px;
+}
+
+.navbar__search:hover {
+    background-color: #f44336;
+}
+
+.navbar__search-icon-search {
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+/* navbar__list-menu */
+.navbar__list-menu {
+    width: 160px;
+    background-color: var(--white-color);
+    position: absolute;
+    bottom: -116px;
+    left: 0;
+    box-shadow: 0 2px 6px rgb(94, 94, 94);
+    z-index: 1;
+    display: none;
+}
+
+.navbar__list-item-more:hover .navbar__list-menu {
+    display: block;
+}
+
+.navbar__list-menu-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar__list-menu-item:hover {
+    background-color: rgba(204, 204, 204, 0.8);
+}
+
+.navbar__list-menu-link {
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    flex: 1;
+    padding: 10px 16px;
+}
+
+.navbar__list-link-more {
+    margin-right: -24px;
+}
+
+/* slider */
+.slider {
+    margin-top: 48px;
+}
+
+.slider__slider {
+    position: relative;
+}
+
+
+.slider__slider-infor-text {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.slider__slider-space {
+    font-size: 4rem;
+    color: var(--white-color);
+    margin: 20px 0;
+
+}
+
+.slider__slider-text {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin: 0;
+}
+
+/* container */
+
+/* introduction */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduction {
+    width: 768px;
+    padding: 64px 0;
+
+}
+
+.introduction__title {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.introduction__title-text {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #888;
+    font-weight: 300;
+}
+
+.introduction__content {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.introduction__members {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 0;
+}
+
+.introduction__members-members {
+    position: relative;
+    text-align: center;
+}
+
+.introduction__members-name {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    font-size: 1.2rem;
+    transform: translate(-50%);
+}
+
+.introduction__members-img {
+    width: 154px;
+    height: 154px;
+    background-size: cover;
+    background-position: center;    
+}
+
+/* ticket */
+.ticket {
+    background-color: var(--black-color);
+    width: 100%;
+    padding: 44px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket__heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket__heading-title {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 200;
+    color: var(--white-color);
+    margin: 10px 0;
+}
+
+.ticket__heading-text {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: 400;
+    margin: 15px 0;
+    font-style: italic;
+    text-align: center;
+}
+
+/* calendar */
+.ticket__calendar-list {
+    list-style: none;
+    width: 766px;
+    background-color: var(--white-color);
+    padding-left: 0;
+    margin: 26px 0 0 0;
+}
+
+.ticket__calendar-item {
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-bottom: 1px solid #333333;
+}
+
+.ticket__calendar-date {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-right: 18px;
+}
+
+.ticket__calendar-condition {
+    background-color: #f44336;
+    color: var(--white-color);
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 2px 6px;
+}
+
+.ticket__calendar-item--has-ticket .ticket__calendar-condition {
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+/* ticket__buy */
+.ticket__buy {
+    width: 766px;
+    display: flex;
+    padding: 32px 0;
+}
+
+.ticket__buy-item {
+    width: 31.94%;
+    margin: 0 1.04%;
+    background-color: var(--white-color);
+    padding-bottom: 16px;
+    transition: transform linear 0.1s;
+}
+
+.ticket__buy-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 4px 4px rgb(181, 3, 3);
+}
+
+.ticket__buy-item:first-child {
+    margin-left: 0;
+}
+
+.ticket__buy-item:last-child {
+    margin-right: 0;
+}
+
+.ticket__buy-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.ticket__buy-infor {
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ticket__buy-place {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.ticket__buy-date {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-bottom: 16px;
+}
+
+.ticket__buy-description {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.ticket__buy-btn {
+    margin-left: 16px;
+}
+
+/* contact */
+/* contact__heading */
+.contact {
+    padding: 64px 0;
+    width: 766px;
+}
+
+.contact__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact__heading-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.contact__heading-text {
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: italic;
+    color: #888;
+}
+
+/* contact__contact */
+.contact-wapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.contact__contact-item {
+    list-style: none;
+}
+
+.contact__contact-text {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.contact__contact-icon-location {
+    font-size: 1.2rem;
+    margin-right: 14px;
+}
+
+.contact__contact-icon-phone {
+    font-size: 1.2rem;
+    margin-right: 12px;
+
+}
+
+.contact__contact-icon-letter {
+    font-size: 1.2rem;
+    margin-right: 12px;
+
+}
+
+/* contact__input */
+.contact__input {
+    width: 384px;
+}
+
+.contact__input-2-input {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.contact__input-top {
+    flex: 1;
+    outline: none;
+
+}
+
+.contact__input-top1 {
+    margin-right: 8px;
+}
+
+.contact__input-top2 {
+    margin-left: 8px;
+
+}
+
+
+.contact__input-1-input {
+    display: flex;
+    height: 40px;
+}
+
+input[type = "text"] {
+    font-size: 1.2rem;
+    padding-left: 8px;
+}
+
+.contact__input-bottom {
+    flex: 1;
+    outline: none;
+}
+
+.btn.contact__input-btn {
+    min-width: 72px;
+    height: 38px;
+    display: block;
+    margin: 16px 0 16px auto;
+}
+
+/* map */
+.map {
+    width: 100%;
+}
+
+.map__img {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    padding: 64px 0;
+    text-align: center;
+}
+
+
+.footer__icon-icon {
+    font-size: 2rem;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.footer__icon-icon:hover {
+    color: rebeccapurple;
+}
+
+.footer__madein {
+    margin-top: 8px;
+}
+
+.footer__madein span{
+    font-size: 1.2rem;
+}
+
+.footer__madein a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(0, 173, 173);
+    font-style: italic;
+}
+
+.footer__madein a:hover {
+    color: #f44336;
+}

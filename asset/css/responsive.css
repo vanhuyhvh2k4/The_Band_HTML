@@ -1,0 +1,66 @@
+/* Tablet + Mobile */
+@media (max-width: 1023px) {
+
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    html {
+        font-size: 140%;
+    }
+    
+    .header {
+        height: 100px;
+    }
+
+    .navbar__list-item {
+        margin-right: 8px;
+    }
+
+    .navbar__list-link {
+        padding: 0 40px;
+    }
+
+    .slider {
+        margin-top: 100px;
+    }
+
+    .navbar__search {
+        width: 120px;
+    }
+
+    .navbar__list-menu {
+        width: 240px;
+        bottom: -278px;
+        font-weight: 500;
+    }
+
+    .navbar__list-menu-link {
+        padding: 24px;
+    }
+
+    .slider__slider-text {
+        width: max-content;
+        line-height: 3rem;
+        margin-top: 60px;
+    }
+
+    .introduction {
+        width: 960px;
+    }
+
+    .introduction__members {
+        justify-content: space-between;
+    }
+
+    .introduction__members-img {
+        zoom: 2;
+    }
+
+    .ticket__calendar-list {
+        width: 1200px;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+
+}
